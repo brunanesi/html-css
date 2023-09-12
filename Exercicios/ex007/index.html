@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1> Criando Links Externos</h1>
+    <a href="https://github.com/juoliveira1997"> Perfil Professora Juliana</a>
+
+    <h2> Indetificando o idioma do site</h2>
+    <a href="https://w3.org/TR/2014/REC-html15-20141028/obsolete.html" hreflang="en">Tags Obsoletas (em inglês)</a>
+
+    <h2>Abrinfo links em novas guias</h2>
+    <p>O parâmetro target vai definir o comportamento do link que o usuário vai abrir. Entre os possíveis valores temos:
+        <ul>
+            <li>_blank: abre link em uma nova janela</li>
+            <li>_self: vai abrir o link na janela atual (padrão)</li>
+            <li>_top:vai desfazer todos os frames e abrir o navegador completo</li>
+            <li>_parent: similar ao _top</li>
+            <li>nome-do-frame: caso esteja usando frames, indicando o nome da janela a abrir.</li>
+        </ul>
+    </p>
+    <a href="http://www.linkedin.com/in/juoliveira1997/" target="blank">Acesso ao linkedin professora Juliana</a>
+
+    <h2>Esse link é seu?</h2>
+    <p>podemos indiciar a natureza do destino do link utilizando o parâmetro rel que aceita os seguintes valores</p>
+    <ul>
+        <li>next: indica que o link é a próxima parte do documento atual.</li>
+        <li>prev: indica que o link é a parte anterior do documento atual</li>
+        <li>author: indica que é um link para o site do autor do artigo atual</li>
+        <li>external: indica que é um link para outro site que não faz parte do site atual</li>
+        <li>nofollow: indica que é um link para um site não endossado, como um link pago.</li>
+    </ul>
+    <a href="pagina1.html" target="_self" rel="next">Página 1</a>
+
+    <p>Você também pode acessar nossa<a href="noticias/pagina2.html"> página de notícias</a></p>
+
+    <h2>Downloads</h2>
+    <p>Podemos adicionar arquivos para download</p>
+    <a href="downloads/capa PDF.pdf" download="capa PDF.pdf" type="application/pdf">Baixe o arquivo Capa aqui</a>
+
+</body>
+</html>
