@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Sombras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        nav {
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgb(80, 79, 79); /* sombra: deslocamento horizontal (positivo direito,usando o negativo para para o esquerdo), deslocamento vertical ( positivo pra baixo, valor negativo pra cima), blur: espalhamento, cor. */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: grey;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: darkgray;
+            color: whitesmoke;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Cabeçalho header, inclui titulos, menus de navegação -->
+     <header>
+        <h1> Meu Site</h1>
+        <nav>
+            <!-- vai definir uma area que possui link de navegação, geralmente aberto no header -->
+            <a href="index.html">Home</a>
+            <a href="shorthands.html">Short Hands</a>
+            <a href="groupingtags.html"> Grouping e Semantic Tags</a>
+            <a href="bordas.html">Bordas</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Delimita o lugar onde fica o conteudo principal do site-->
+        <p>aqui se insere as sessões: agrupamento de conteudo</p>
+        <section id="assuntos">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt et laborum veniam dolore dolorum nostrum delectus modi consequatur. Temporibus doloribus cumque inventore neque at quia id repellat natus, quas eveniet?</p>
+        </section>
+        <section id="noticias">
+            <p>conhenco a tag article: para delimitar noticia, blog...</p>
+            <article> <!-- conteudo que pode ser lido de forma independente-->
+                <h2>Noticias sobre tecnologia</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem similique harum debitis neque dolorem aliquid asperiores consectetur, impedit autem in. Molestiae placeat quae blanditiis pariatur adipisci explicabo culpa porro nobis.</p> <aside> 
+                    <p> o conteudo aside fica do lado do texto, ou no meio, usado para complementar um artigo usando os múltiplos niveis.</p>
+                </aside>
+            </article> 
+        </section>
+
+    </main>
+    <footer>       
+    <p>
+        roda pé : informações do desenvolvedor
+    </p>
+</footer>
+</body>
+</html>

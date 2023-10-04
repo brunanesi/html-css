@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+        a {
+            color: brown;
+            text-decoration: none; /* tirando o tracinho de baixo do link */
+            font-weight: bold; /*negrito*/
+        }
+        
+        a:visited {
+            color: darkmagenta;
+        } /* quando o link foi clicado*/
+
+        a:hover { 
+            color:black;
+            text-decoration: underline;
+         } /*quando passar o mouse por cima do link*/
+
+         a:active { color: aquamarine;
+         } /* muda quando esta clicando no link */
+
+         /*pseudo elementos =  apos a tag mensionada*/
+         a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey
+         }
+
+    </style>
+
+</head>
+<body>
+    <h1> Seletores personalizados</h1>
+    <p> # id <br>
+        . class <br>
+        : pseudo-class <br>
+        :: pseudo-element <br>
+        > children
+    </p>
+
+    <h1> Personalizando links</h1>
+    <ul>
+        <li><a href="http://www.google.com.br">Perfil Linkedin</a>
+        <li><a href="http://www.drive.google.com/folders">Drive da turma</a></li>
+        <li><a href="#">Link da ultima aula</a></li>
+    </ul>
+</body>
+</html>
