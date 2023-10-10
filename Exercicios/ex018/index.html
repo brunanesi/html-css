@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: lightgray;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(245, 245, 245);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.376);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: f9f9f9;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: rgb(36, 199, 188);
+        }
+    </style>
+    <title>Formulário de contato</title>
+</head>
+<body>
+    <h1>Fale Conosco</h1>
+    <form action="processar.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>* 
+
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Seu email" required>*
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
